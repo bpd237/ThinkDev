@@ -1,0 +1,46 @@
+body {font-size: 110%; line-height: 25px;}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  transition: all .5s cubic-bezier(.6,2,.4,1);
+}
+/*
+  +--------------------------------------------------------------------+
+  |                                                                    |
+  |                     MA GRILLE RESPONSIVE                           |
+  |                                                                    |
+  +--------------------------------------------------------------------+
+*/
+
+.row {width : 100%; padding: 3% 5%;}
+.row > div {margin : 2% .35%; display: inline-block; vertical-align: top;}
+
+.col_de_1 { width : 7.3%; }
+.col_de_2 { width : 15.6%; }
+.col_de_3 { width : 24%; }
+.col_de_4 { width : 32.3%; }
+.col_de_5 { width : 40.6%; }
+.col_de_6 { width : 49%; }
+.col_de_7 { width : 57.3%; }
+.col_de_8 { width : 65.6%; }
+.col_de_9 { width : 74%; }
+.col_de_10 { width : 82.3%; }
+.col_de_11 { width : 90.6%; }
+.col_de_12 { width : 99%; }
+
+/*
+  +---------------------------------------------+
+  |                  TELEPHONES                 |
+  +---------------------------------------------+
+*/
+@media only screen and (max-width:500px) {
+
+    body {font-size: 80%;  line-height: 15px;}
+
+    .row {width : 100%;}
+    .row > div { margin : 0.25% 1%;}
+
+    .col_de_1, .col_de_2, .col_de_3, .col_de_4, .col_de_5, .col_de_6, .col_de_7, .col_de_8, .col_de_9, .col_de_10, .col_de_11, .col_de_12 { width : 98%; float : none;}
+}
